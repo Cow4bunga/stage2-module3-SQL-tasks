@@ -1,2 +1,1 @@
-SELECT * FROM payment
-WHERE payment.paymenttype='MONTHLY';
+SELECT * FROM payment WHERE payment.paymenttype='MONTHLY';
