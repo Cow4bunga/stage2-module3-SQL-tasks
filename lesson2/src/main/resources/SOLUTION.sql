@@ -25,7 +25,7 @@ insert into paymenttype ( name) values ( 'WEEKLY');
 insert into paymenttype ( name) values ( 'MONTHLY');
 insert into payment (type_id, amount, payment_date, student_id) values (2, 301.19, '2020-07-02 17:45:36', 1);
 insert into payment (type_id, amount, payment_date, student_id) values (3, 1920.86, '2015-12-13 19:09:16', 4);
-insert into payment (type_id, amount, payment_date, student_id) values (1, 1842.44, '2017-12-23 05:27:57', 7);
+insert into payment (type_id, amount, payment_date, student_id) values (2, 1842.44, '2017-12-23 05:27:57', 7);
 insert into payment (type_id, amount, payment_date, student_id) values (1, 6879.15, '2020-12-10 19:54:36', 5);
 insert into payment (type_id, amount, payment_date, student_id) values (1, 301.19, '2020-07-02 17:45:36', 1);
 insert into payment (type_id, amount, payment_date, student_id) values (2, 1920.86, '2015-12-13 19:09:16', 4);

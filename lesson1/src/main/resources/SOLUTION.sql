@@ -10,7 +10,8 @@ CREATE TABLE subject
     id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(250),
     description VARCHAR(255),
-    grade int NOT NULL
+    grade int NOT NULL,
+    CHECK (grade>=1 AND grade<=5)
 );
 
 CREATE TABLE paymenttype
@@ -33,10 +34,11 @@ CREATE TABLE payment
 CREATE TABLE mark
 (
     id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    student_id BIGINT,
-    subject_id BIGINT,
+    student_id BIGINT NOT NULL,
+    subject_id BIGINT NOT NULL,
     mark INT NOT NULL,
     foreign key (student_id) references student(id),
-    foreign key (subject_id) references subject(id)
+    foreign key (subject_id) references subject(id),
+    CHECK (mark>=1 AND mark<=10)
 );
 
